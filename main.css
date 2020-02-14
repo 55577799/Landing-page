@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    width: 1200px;
+    margin:0 auto;
+}
+
+header{
+    background-color: #00305a;
+    padding: 15px 0 15px 15px;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+header img{
+    width: 64px;
+    height: 64px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: Verdana, serif;
+    border-bottom: 3px solid #00305a;
+}
+header nav a:first-child:hover{
+    border-bottom: 3px solid #00305a;
+}
+header nav a:hover{
+    color:red;
+    border-bottom: 3px solid black;
+}
+main{
+    border-top: 5px solid white;
+    height: 600px;
+    background-image: url("main.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main_slogan{
+    background-color: #00305a;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0.5em 0;
+}
+main button{
+    font-size: 2em;
+    color:aliceblue;
+    background-color: orange;
+    cursor:pointer;
+    padding: 15px;
+    border-radius: 15px;
+}
+main button:hover{
+    box-shadow:inset 2px 3px 10px black;
+}
+article{
+    padding: 3em 2em;
+    font-size: 21px;
+    border: 3px solid #00305a;
+
+}
+article p{
+    margin-bottom: 1em;
+    font-family: "Times New Roman", sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+    color: #00305a;
+}
+article h5{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+ul li {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+ul li:before{
+   content:"⚓ ⛺";
+   color:red;
+}
+ul li:nth-child(1):before{
+    content:"⚓";
+}
+ul li:nth-child(2):before{
+    content:"⛺";
+}
+ul li:nth-child(3):before{
+    content:"⛱";
+}
+ul li:nth-child(4):before{
+    content:"⛪";
+}
+
+.card_main_wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #00305a;
+    justify-content: center;
+    margin-top: 3px;
+}
+.card_column{
+    display: flex;
+    flex-flow: colomn nowrap;
+}
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: white;
+    margin: 1.5px;
+    align-items: center;
+    width: 396px;
+    padding-bottom: 40px;
+}
+.card__icon{
+    background-size: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 200px;
+}
+.card__h3{
+    color: hsl(240, 92%, 66%);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.card__line{
+    width: 120px;
+    height: 4px;
+    background-color: #e27c56;
+    margin: 10px auto;
+}
+.card__p{
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: Georgia,serif;
+}
+.moscow{
+    background-image: url("icons/moscow.png")
+}
+.big-ben{
+    background-image: url("icons/big-ben.png")
+}
+.kangaroo{
+    background-image: url("icons/kangaroo.png");
+}
+.pyramids{
+    background-image: url("icons/pyramids.png");
+}
+.sa{
+    background-image: url("icons/south-america.png"); 
+}
+.na{
+    background-image: url("icons/north-america.png"); 
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    border: 1px solid hsl(212, 84%, 81%);
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+h3{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: hsl(240, 92%, 66%);
+    text-align: center;
+    padding-top: 20px;
+}
+.faq__h3{
+    margin-bottom: 20px;
+
+}
+.faq-item{
+    width:100%;
+    border: 1px solid hsl(240, 92%, 66%);
+}
+.faq-item-quest{
+    padding: 15px;
+    background-color: hsl(212, 84%, 81%);
+    color:black;
+    font-size: 24px;
+    cursor:pointer;
+}
+.faq-item-answer{
+    padding: 15px;
+    display: none;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18px;
+}
+.form_wrapper{
+    background-color: hsla(31, 79%, 87%, 0.78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_wrapper h3{
+    font-size: 2em;
+    margin: 2em auto;
+    color: hsl(240, 92%, 66%);
+}
+form{
+    display: flex;
+    flex-direction: row;
+    width: 50em;
+    justify-content: space-around;
+}
+label{
+    margin-bottom: 4px;
+    font-size: 20px;
+    background-color: orange;
+    color: hsl(240, 92%, 66%);
+    font-weight: 700;
+}
+input, textarea{
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 8px;
+    background-color: rgba(248, 248, 248);
+    border: 1px solid grey;
+    outline: none;
+    font-family: Georgia,serif;
+    border-radius: 4px;
+    width: 140%;
+}
+input[type="submit"]{
+    width: 160px;
+    align-self: flex-end;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #9dc1f7;
+    color: white;
+    cursor:pointer;
+}
+.first_column{
+    display: flex;
+    flex-direction: column;
+}
+.second_column{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #00305a;
+    padding: 15px;
+}
+.yellow{
+    color:orange;
+}
+.white{
+    color: white;
+}
+.h5_info{
+    font-size: 2em;
+}
+.info{
+    margin-top: 10px;
+    font-size: 22px;
+}
+.soc_icons{
+    width: 300px;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-left: 75%;
+}
+.soc_icons i {
+color: hsl(209, 23%, 56%);
+font-size: 2em;
+}
